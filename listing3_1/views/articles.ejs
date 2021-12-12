@@ -1,0 +1,10 @@
+<!-- 按书中引入head和foot时出错，故这里不引入文件 -->
+<ul>
+	<% articles.forEach((article) => { %>
+	<li>
+		<a href="/articles/<%= article.id %>">
+			<%= article.title %>
+		</a>
+	</li>
+	<% }) %>
+</ul>
